@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage("stage-1"){
             steps{
-                sh "mkdir vel-appp"
+                sh "chmod -R 777 /root/vel-app"
             }
         }
         stage("stage-2"){
