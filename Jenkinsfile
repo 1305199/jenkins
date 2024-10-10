@@ -1,14 +1,14 @@
 pipeline{
     agent{
         label{
-            label "built-in"
-            customWorkspace "/root/vel-app"
+            label "slave-1"
+
         }
     }
     stages{
         stage("stage-1"){
             steps{
-                sh "chmod -R 777 /root/vel-app"
+                sh "mkdir vel-app"
             }
         }
         stage("stage-2"){
